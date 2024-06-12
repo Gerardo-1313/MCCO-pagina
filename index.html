@@ -1,0 +1,163 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenierías Express</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 1em;
+            text-align: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .banner {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 600px;
+        }
+        .services, .specialists, .contact, .about {
+            padding: 20px;
+            text-align: center;
+        }
+        .service-item, .specialist-item {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form, .request-form {
+            margin: 20px auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ingenierías Express</h1>
+</header>
+
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#services">Servicios</a>
+    <a href="#specialists">Especialistas</a>
+    <a href="#contact">Contacto</a>
+    <a href="#about">Sobre Nosotros</a>
+</nav>
+
+<section id="home" class="banner">
+    <h2>Soluciones rápidas y eficientes en ingeniería</h2>
+    <img src="https://via.placeholder.com/600x300" alt="Ingenieros trabajando">
+    <br><br>
+    <button onclick="document.location='#services'">Solicitar Servicio</button>
+</section>
+
+<section id="services" class="services">
+    <h2>Servicios</h2>
+    <div class="service-item">
+        <h3>Ingeniería de Puentes</h3>
+        <p>Descripción breve del servicio.</p>
+    </div>
+    <div class="service-item">
+        <h3>Ingeniería de Herramientas</h3>
+        <p>Descripción breve del servicio.</p>
+    </div>
+    <div class="service-item">
+        <h3>Intercambiadores de Calor</h3>
+        <p>Descripción breve del servicio.</p>
+    </div>
+    <form class="request-form">
+        <h3>Formulario de Solicitud de Servicios</h3>
+        <label for="project-name">Nombre del Proyecto:</label>
+        <input type="text" id="project-name" name="project-name"><br><br>
+        <label for="description">Descripción:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <label for="attachment">Adjuntar Documentos:</label>
+        <input type="file" id="attachment" name="attachment"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="specialists" class="specialists">
+    <h2>Especialistas</h2>
+    <div class="specialist-item">
+        <h3>Nombre del Especialista</h3>
+        <p>Área de Especialización</p>
+        <button>Solicitar Consulta</button>
+    </div>
+    <div class="specialist-item">
+        <h3>Nombre del Especialista</h3>
+        <p>Área de Especialización</p>
+        <button>Solicitar Consulta</button>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Call Center</h2>
+    <p>Teléfono: +123456789 | Chat en Vivo | Email: contacto@ingenieriasexpress.com</p>
+    <form class="contact-form">
+        <h3>Formulario de Contacto Rápido</h3>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="about" class="about">
+    <h2>Sobre Nosotros</h2>
+    <h3>Nuestra Historia</h3>
+    <p>Breve historia de la empresa...</p>
+    <h3>Equipo</h3>
+    <div class="specialist-item">
+        <h4>Nombre del Miembro del Equipo</h4>
+        <p>Breve biografía...</p>
+    </div>
+    <div class="specialist-item">
+        <h4>Nombre del Miembro del Equipo</h4>
+        <p>Breve biografía...</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Ingenierías Express. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
