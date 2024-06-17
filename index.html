@@ -29,19 +29,22 @@
             margin: 0 15px;
             text-decoration: none;
         }
-        nav a:hover {
-            color: #ff6600;
-        }
         .banner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
             background-color: #f4f4f4;
             padding: 50px 20px;
-            text-align: center;
-            min-height: calc(100vh - 130px);
+            min-height: calc(100vh - 130px); /* Ajusta esta altura según el tamaño de tu header y nav */
         }
         .banner img {
-            width: 100%;
-            max-width: 600px;
+            max-width: 50%;
             height: auto;
+        }
+        .banner-text {
+            max-width: 50%;
+            padding: 20px;
         }
         .services, .specialists, .contact, .about {
             padding: 20px;
@@ -54,11 +57,6 @@
             padding: 20px;
             background-color: #f4f4f4;
             border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .service-item img, .specialist-item img {
-            width: 100%;
-            height: auto;
             border-radius: 5px;
         }
         .contact-form, .request-form {
@@ -95,10 +93,11 @@
 </nav>
 
 <section id="home" class="banner">
-    <h2>Soluciones rápidas y eficientes en ingeniería</h2>
+    <div class="banner-text">
+        <h2>Soluciones rápidas y eficientes en ingeniería</h2>
+        <button onclick="document.location='#services'">Solicitar Servicio</button>
+    </div>
     <img src="https://th.bing.com/th/id/R.9ca18f4200305b4d6200d1e8373e52a6?rik=%2fNwZnfGVSJwLRg&riu=http%3a%2f%2fwww.abengoa.cl%2fexport%2fsites%2fabengoa-chile%2f.content%2fgalleries%2fimages%2fprojects%2fsdi-mineria.jpg&ehk=3K3mJGV1MAt1dNEj84PQsoPaMT1EQUerR20z%2bLTHw%2bs%3d&risl=&pid=ImgRaw&r=0" alt="Ingenieros trabajando">
-    <br><br>
-    <button onclick="document.location='#services'">Solicitar Servicio</button>
 </section>
 
 <section id="services" class="services">
@@ -106,17 +105,14 @@
     <div class="service-item">
         <h3>Ingeniería de Puentes</h3>
         <p>Descripción breve del servicio.</p>
-        <img src="puente.jpg" alt="Puente">
     </div>
     <div class="service-item">
         <h3>Ingeniería de Herramientas</h3>
         <p>Descripción breve del servicio.</p>
-        <img src="herramientas.jpg" alt="Herramientas">
     </div>
     <div class="service-item">
         <h3>Intercambiadores de Calor</h3>
         <p>Descripción breve del servicio.</p>
-        <img src="intercambiador.jpg" alt="Intercambiador de Calor">
     </div>
     <form class="request-form">
         <h3>Formulario de Solicitud de Servicios</h3>
@@ -135,13 +131,11 @@
     <div class="specialist-item">
         <h3>Nombre del Especialista</h3>
         <p>Área de Especialización</p>
-        <img src="especialista.jpg" alt="Especialista">
         <button>Solicitar Consulta</button>
     </div>
     <div class="specialist-item">
         <h3>Nombre del Especialista</h3>
         <p>Área de Especialización</p>
-        <img src="especialista2.jpg" alt="Especialista">
         <button>Solicitar Consulta</button>
     </div>
 </section>
@@ -175,12 +169,10 @@
     <div class="specialist-item">
         <h4>Mario Cabrera</h4>
         <p>Breve biografía...</p>
-        <img src="mario.jpg" alt="Mario Cabrera">
     </div>
     <div class="specialist-item">
         <h4>Carlos Orostegui</h4>
         <p>Breve biografía...</p>
-        <img src="carlos.jpg" alt="Carlos Orostegui">
     </div>
 </section>
 
@@ -190,4 +182,3 @@
 
 </body>
 </html>
-
