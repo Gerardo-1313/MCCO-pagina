@@ -13,7 +13,7 @@
             font-family: Arial, sans-serif;
         }
         header {
-            background-color: #02176D; /* Azul oscuro */
+            background-color: #003366; /* Azul corporativo */
             color: #fff;
             padding: 1em 0;
             text-align: center;
@@ -22,7 +22,7 @@
             margin: 0;
             padding: 1em;
             text-align: center;
-            background-color: 1236C6; /* Azul más oscuro */
+            background-color: #004080; /* Azul más oscuro */
         }
         nav a {
             color: #fff;
@@ -59,7 +59,7 @@
             background-color: #1a1a1a; /* Color base de fondo oscuro */
             border: 1px solid #004080; /* Azul oscuro */
             border-radius: 5px;
-            color: #fff; /* Texto blanco */
+            color: #fff; /* Color del texto */
         }
         .service-item:nth-child(even), .specialist-item:nth-child(even) {
             background-color: #003366; /* Alterna a un tono más oscuro */
@@ -71,11 +71,11 @@
             border: 1px solid #004080; /* Azul oscuro */
             border-radius: 5px;
             background-color: #1a1a1a; /* Fondo oscuro */
-            color: #fff; /* Texto blanco */
+            color: #fff; /* Color del texto */
         }
         footer {
             background-color: #003366; /* Azul oscuro */
-            color: #fff;
+            color: #fff; /* Color del texto */
             text-align: center;
             padding: 10px 0;
             position: fixed;
@@ -125,6 +125,12 @@
         <input type="text" id="project-name" name="project-name"><br><br>
         <label for="description">Descripción:</label><br>
         <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <label for="service">Servicio:</label>
+        <select id="service" name="service">
+            <option value="puentes">Ingeniería de Puentes</option>
+            <option value="herramientas">Ingeniería de Herramientas</option>
+            <option value="intercambiadores">Intercambiadores de Calor</option>
+        </select><br><br>
         <label for="attachment">Adjuntar Documentos:</label>
         <input type="file" id="attachment" name="attachment"><br><br>
         <button type="submit">Enviar</button>
@@ -180,6 +186,7 @@
         <p>Breve biografía...</p>
     </div>
 </section>
+
 
 </body>
 </html>
