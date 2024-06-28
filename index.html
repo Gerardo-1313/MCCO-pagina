@@ -51,8 +51,12 @@
             padding: 20px;
             text-align: center;
         }
-        .services .service-item, .specialists .specialist-item {
-            display: inline-block;
+        .services-grid, .specialists-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service-item, .specialist-item {
             width: 30%;
             margin: 15px;
             padding: 20px;
@@ -60,14 +64,15 @@
             border: 1px solid #004080; /* Azul oscuro */
             border-radius: 5px;
             color: #fff; /* Color del texto */
+            text-align: center;
+            position: relative;
         }
-        .service-item:nth-child(even), .specialist-item:nth-child(even) {
-            background-color: #003366; /* Alterna a un tono más oscuro */
-        }
-        .services-grid, .specialists-grid {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .service-item img, .specialist-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
         }
         .contact-form, .request-form {
             margin: 20px auto;
@@ -114,16 +119,22 @@
     <h2>Servicios</h2>
     <div class="services-grid">
         <div class="service-item">
+            <img src="https://via.placeholder.com/100" alt="Servicio 1">
             <h3>Ingeniería de Puentes</h3>
             <p>Descripción breve del servicio.</p>
+            <button>Saber más</button>
         </div>
         <div class="service-item">
+            <img src="https://via.placeholder.com/100" alt="Servicio 2">
             <h3>Ingeniería de Herramientas</h3>
             <p>Descripción breve del servicio.</p>
+            <button>Saber más</button>
         </div>
         <div class="service-item">
+            <img src="https://via.placeholder.com/100" alt="Servicio 3">
             <h3>Intercambiadores de Calor</h3>
             <p>Descripción breve del servicio.</p>
+            <button>Saber más</button>
         </div>
     </div>
     <form class="request-form">
@@ -148,11 +159,13 @@
     <h2>Especialistas</h2>
     <div class="specialists-grid">
         <div class="specialist-item">
+            <img src="https://via.placeholder.com/100" alt="Especialista 1">
             <h3>Nombre del Especialista</h3>
             <p>Área de Especialización</p>
             <button>Solicitar Consulta</button>
         </div>
         <div class="specialist-item">
+            <img src="https://via.placeholder.com/100" alt="Especialista 2">
             <h3>Nombre del Especialista</h3>
             <p>Área de Especialización</p>
             <button>Solicitar Consulta</button>
@@ -180,15 +193,23 @@
     <h3>Nuestra Historia</h3>
     <p>Breve historia de la empresa...</p>
     <h3>Equipo</h3>
-    <div class="specialist-item">
-        <h4>Mario Cabrera</h4>
-        <p>Breve biografía...</p>
-    </div>
-    <div class="specialist-item">
-        <h4>Carlos Orostegui</h4>
-        <p>Breve biografía...</p>
+    <div class="specialists-grid">
+        <div class="specialist-item">
+            <img src="https://via.placeholder.com/100" alt="Mario Cabrera">
+            <h4>Mario Cabrera</h4>
+            <p>Breve biografía...</p>
+        </div>
+        <div class="specialist-item">
+            <img src="https://via.placeholder.com/100" alt="Carlos Orostegui">
+            <h4>Carlos Orostegui</h4>
+            <p>Breve biografía...</p>
+        </div>
     </div>
 </section>
+
+<footer>
+    <p>2023 © Ingenierías Express. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>
