@@ -48,15 +48,18 @@
             max-width: 50%;
         }
         .services {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
             padding: 20px;
             text-align: center;
             background-color: #f0f0f0;
         }
+        .service-items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
         .service-item {
-            width: 20%;
+            width: 25%; /* Ajusta este valor según tus necesidades */
             padding: 20px;
             background-color: #003366; /* Azul oscuro */
             border-radius: 10px;
@@ -64,16 +67,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             min-height: 300px; /* Ajusta este valor para cambiar la altura mínima */
-        }
-        .service-item img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .contact, .about {
-            padding: 20px;
-            text-align: center;
         }
         .contact-form, .request-form {
             margin: 20px auto;
@@ -118,20 +111,49 @@
 
 <section id="services" class="services">
     <h2>Servicios</h2>
-    <div class="service-item">
-        <img src="file-jLdBDWoW71dSe82dO26G5JBV" alt="Ingeniería de Puentes">
-        <h3>Ingeniería de Puentes</h3>
-        <p>Descripción breve del servicio.</p>
+    <div class="service-items">
+        <div class="service-item">
+            <h3>Ingeniería de Puentes</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
+        <div class="service-item">
+            <h3>Ingeniería de Herramientas</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
+        <div class="service-item">
+            <h3>Intercambiadores de Calor</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
     </div>
-    <div class="service-item">
-        <img src="file-aBdI4GusvAiviLnVixg3Gyah" alt="Ingeniería de Herramientas">
-        <h3>Ingeniería de Herramientas</h3>
-        <p>Descripción breve del servicio.</p>
+    <form class="request-form">
+        <h3>Formulario de Solicitud de Servicios</h3>
+        <label for="project-name">Nombre del Proyecto:</label>
+        <input type="text" id="project-name" name="project-name"><br><br>
+        <label for="description">Descripción:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <label for="service">Servicio:</label>
+        <select id="service" name="service">
+            <option value="puentes">Ingeniería de Puentes</option>
+            <option value="herramientas">Ingeniería de Herramientas</option>
+            <option value="intercambiadores">Intercambiadores de Calor</option>
+        </select><br><br>
+        <label for="attachment">Adjuntar Documentos:</label>
+        <input type="file" id="attachment" name="attachment"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="specialists" class="specialists">
+    <h2>Especialistas</h2>
+    <div class="specialist-item">
+        <h3>Nombre del Especialista</h3>
+        <p>Área de Especialización</p>
+        <button>Solicitar Consulta</button>
     </div>
-    <div class="service-item">
-        <img src="file-dwr2KxbIChfn44YNg2vwddBC" alt="Intercambiadores de Calor">
-        <h3>Intercambiadores de Calor</h3>
-        <p>Descripción breve del servicio.</p>
+    <div class="specialist-item">
+        <h3>Nombre del Especialista</h3>
+        <p>Área de Especialización</p>
+        <button>Solicitar Consulta</button>
     </div>
 </section>
 
@@ -164,10 +186,6 @@
         <p>Breve biografía...</p>
     </div>
 </section>
-
-<footer>
-    <p>2023 © Ingenierías Express. Todos los derechos reservados.</p>
-</footer>
 
 </body>
 </html>
