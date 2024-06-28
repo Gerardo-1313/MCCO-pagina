@@ -47,32 +47,32 @@
             text-align: center;
             max-width: 50%;
         }
-        .services, .specialists, .contact, .about {
-            padding: 20px;
-            text-align: center;
-        }
-        .services-grid, .specialists-grid {
+        .services {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .service-item, .specialist-item {
-            width: 30%;
-            margin: 15px;
+            justify-content: space-around;
+            align-items: center;
             padding: 20px;
-            background-color: #1a1a1a; /* Color base de fondo oscuro */
-            border: 1px solid #004080; /* Azul oscuro */
-            border-radius: 5px;
-            color: #fff; /* Color del texto */
             text-align: center;
-            position: relative;
+            background-color: #f0f0f0;
         }
-        .service-item img, .specialist-item img {
+        .service-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #003366; /* Azul oscuro */
+            border-radius: 10px;
+            color: #fff; /* Color del texto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .service-item img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             margin-bottom: 15px;
-            object-fit: cover;
+        }
+        .contact, .about {
+            padding: 20px;
+            text-align: center;
         }
         .contact-form, .request-form {
             margin: 20px auto;
@@ -117,59 +117,20 @@
 
 <section id="services" class="services">
     <h2>Servicios</h2>
-    <div class="services-grid">
-        <div class="service-item">
-            <img src="https://via.placeholder.com/100" alt="Servicio 1">
-            <h3>Ingeniería de Puentes</h3>
-            <p>Descripción breve del servicio.</p>
-            <button>Saber más</button>
-        </div>
-        <div class="service-item">
-            <img src="https://via.placeholder.com/100" alt="Servicio 2">
-            <h3>Ingeniería de Herramientas</h3>
-            <p>Descripción breve del servicio.</p>
-            <button>Saber más</button>
-        </div>
-        <div class="service-item">
-            <img src="https://via.placeholder.com/100" alt="Servicio 3">
-            <h3>Intercambiadores de Calor</h3>
-            <p>Descripción breve del servicio.</p>
-            <button>Saber más</button>
-        </div>
+    <div class="service-item">
+        <img src="file-jLdBDWoW71dSe82dO26G5JBV" alt="Ingeniería de Puentes">
+        <h3>Ingeniería de Puentes</h3>
+        <p>Descripción breve del servicio.</p>
     </div>
-    <form class="request-form">
-        <h3>Formulario de Solicitud de Servicios</h3>
-        <label for="project-name">Nombre del Proyecto:</label>
-        <input type="text" id="project-name" name="project-name"><br><br>
-        <label for="description">Descripción:</label><br>
-        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
-        <label for="service">Servicio:</label>
-        <select id="service" name="service">
-            <option value="puentes">Ingeniería de Puentes</option>
-            <option value="herramientas">Ingeniería de Herramientas</option>
-            <option value="intercambiadores">Intercambiadores de Calor</option>
-        </select><br><br>
-        <label for="attachment">Adjuntar Documentos:</label>
-        <input type="file" id="attachment" name="attachment"><br><br>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<section id="specialists" class="specialists">
-    <h2>Especialistas</h2>
-    <div class="specialists-grid">
-        <div class="specialist-item">
-            <img src="https://via.placeholder.com/100" alt="Especialista 1">
-            <h3>Nombre del Especialista</h3>
-            <p>Área de Especialización</p>
-            <button>Solicitar Consulta</button>
-        </div>
-        <div class="specialist-item">
-            <img src="https://via.placeholder.com/100" alt="Especialista 2">
-            <h3>Nombre del Especialista</h3>
-            <p>Área de Especialización</p>
-            <button>Solicitar Consulta</button>
-        </div>
+    <div class="service-item">
+        <img src="file-aBdI4GusvAiviLnVixg3Gyah" alt="Ingeniería de Herramientas">
+        <h3>Ingeniería de Herramientas</h3>
+        <p>Descripción breve del servicio.</p>
+    </div>
+    <div class="service-item">
+        <img src="file-dwr2KxbIChfn44YNg2vwddBC" alt="Intercambiadores de Calor">
+        <h3>Intercambiadores de Calor</h3>
+        <p>Descripción breve del servicio.</p>
     </div>
 </section>
 
@@ -193,17 +154,13 @@
     <h3>Nuestra Historia</h3>
     <p>Breve historia de la empresa...</p>
     <h3>Equipo</h3>
-    <div class="specialists-grid">
-        <div class="specialist-item">
-            <img src="https://via.placeholder.com/100" alt="Mario Cabrera">
-            <h4>Mario Cabrera</h4>
-            <p>Breve biografía...</p>
-        </div>
-        <div class="specialist-item">
-            <img src="https://via.placeholder.com/100" alt="Carlos Orostegui">
-            <h4>Carlos Orostegui</h4>
-            <p>Breve biografía...</p>
-        </div>
+    <div class="specialist-item">
+        <h4>Mario Cabrera</h4>
+        <p>Breve biografía...</p>
+    </div>
+    <div class="specialist-item">
+        <h4>Carlos Orostegui</h4>
+        <p>Breve biografía...</p>
     </div>
 </section>
 
