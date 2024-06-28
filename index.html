@@ -86,13 +86,21 @@
             background-color: #f0f0f0;
         }
         .specialist-item {
+            width: 45%;
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: #003366; /* Azul oscuro */
+            background-color: #003366;
             border-radius: 10px;
-            color: #fff; /* Color del texto */
+            color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin: 10px 0;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .specialist-item {
+                width: 100%;
+            }
         }
         .contact {
             padding: 20px;
