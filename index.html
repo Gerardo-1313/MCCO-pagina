@@ -108,6 +108,32 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Estilos para la sección "Sobre Nosotros" */
+        .about {
+            text-align: center;
+        }
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            width: 45%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #003366;
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -196,16 +222,15 @@
 
 <section id="about" class="about">
     <h2>Sobre Nosotros</h2>
-    <h3>Nuestra Historia</h3>
-    <p>Breve historia de la empresa...</p>
-    <h3>Equipo</h3>
-    <div class="specialist-item">
-        <h4>Mario Cabrera</h4>
-        <p>Mario guía de manera clara y ordenada a INGPROTEC. Los colaboradores lo asocian como líder e inspira confienza en las desiciones que toma respecto a la dirección que se toma en los momentos más críticos.</p>
-    </div>
-    <div class="specialist-item">
-        <h4>Carlos Orostegui</h4>
-        <p>Carlos es parte de las operaciones del día a día en INGPROTEC. Se relaciona con toda la parte técnica de la empresa y busca siempre estar en la vanguardia en temas relacionados con la tecnología y eficiencia en nuestras operaciones </p>
+    <div class="team-container">
+        <div class="team-member">
+            <h3>Mario Cabrera</h3>
+            <p>Mario guía de manera clara y ordenada a INGPROTEC. Los colaboradores lo asocian como líder e inspira confianza en las decisiones que toma respecto a la dirección que se toma en los momentos más críticos.</p>
+        </div>
+        <div class="team-member">
+            <h3>Carlos Orostegui</h3>
+            <p>Carlos es parte de las operaciones del día a día en INGPROTEC. Se relaciona con toda la parte técnica de la empresa y busca siempre estar en la vanguardia en temas relacionados con la tecnología y eficiencia en nuestras operaciones.</p>
+        </div>
     </div>
 </section>
 
