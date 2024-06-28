@@ -51,7 +51,7 @@
             padding: 20px;
             text-align: center;
         }
-        .service-item, .specialist-item {
+        .services .service-item, .specialists .specialist-item {
             display: inline-block;
             width: 30%;
             margin: 15px;
@@ -63,6 +63,11 @@
         }
         .service-item:nth-child(even), .specialist-item:nth-child(even) {
             background-color: #003366; /* Alterna a un tono más oscuro */
+        }
+        .services-grid, .specialists-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .contact-form, .request-form {
             margin: 20px auto;
@@ -107,17 +112,19 @@
 
 <section id="services" class="services">
     <h2>Servicios</h2>
-    <div class="service-item">
-        <h3>Ingeniería de Puentes</h3>
-        <p>Descripción breve del servicio.</p>
-    </div>
-    <div class="service-item">
-        <h3>Ingeniería de Herramientas</h3>
-        <p>Descripción breve del servicio.</p>
-    </div>
-    <div class="service-item">
-        <h3>Intercambiadores de Calor</h3>
-        <p>Descripción breve del servicio.</p>
+    <div class="services-grid">
+        <div class="service-item">
+            <h3>Ingeniería de Puentes</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
+        <div class="service-item">
+            <h3>Ingeniería de Herramientas</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
+        <div class="service-item">
+            <h3>Intercambiadores de Calor</h3>
+            <p>Descripción breve del servicio.</p>
+        </div>
     </div>
     <form class="request-form">
         <h3>Formulario de Solicitud de Servicios</h3>
@@ -139,15 +146,17 @@
 
 <section id="specialists" class="specialists">
     <h2>Especialistas</h2>
-    <div class="specialist-item">
-        <h3>Nombre del Especialista</h3>
-        <p>Área de Especialización</p>
-        <button>Solicitar Consulta</button>
-    </div>
-    <div class="specialist-item">
-        <h3>Nombre del Especialista</h3>
-        <p>Área de Especialización</p>
-        <button>Solicitar Consulta</button>
+    <div class="specialists-grid">
+        <div class="specialist-item">
+            <h3>Nombre del Especialista</h3>
+            <p>Área de Especialización</p>
+            <button>Solicitar Consulta</button>
+        </div>
+        <div class="specialist-item">
+            <h3>Nombre del Especialista</h3>
+            <p>Área de Especialización</p>
+            <button>Solicitar Consulta</button>
+        </div>
     </div>
 </section>
 
@@ -183,4 +192,3 @@
 
 </body>
 </html>
-
