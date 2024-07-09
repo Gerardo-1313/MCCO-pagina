@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,12 +34,12 @@
         .banner {
             position: relative;
             width: 100%;
-            height: calc(80vh - 110px); /* Ajusta esta altura según el tamaño de tu header y nav */
+            height: calc(100vh - 130px); /* Ajusta esta altura según el tamaño de tu header y nav */
             background-image: url('https://th.bing.com/th/id/R.9ca18f4200305b4d6200d1e8373e52a6?rik=%2fNwZnfGVSJwLRg&riu=http%3a%2f%2fwww.abengoa.cl%2fexport%2fsites%2fabengoa-chile%2f.content%2fgalleries%2fimages%2fprojects%2fsdi-mineria.jpg&ehk=3K3mJGV1MAt1dNEj84PQsoPaMT1EQUerR20z%2bLTHw%2bs%3d&risl=&pid=ImgRaw&r=0');
             background-size: cover;
             background-position: center;
             display: flex;
-            align-items: flex-start; /* Cambiado de center a flex-start */
+            align-items: center;
             justify-content: center;
             color: white;
         }
@@ -47,7 +48,6 @@
             padding: 20px;
             text-align: center;
             max-width: 50%;
-            margin-top: calc((80vh - 110px) / 4); /* Añadido para ajustar la posición */
         }
         .banner button {
             padding: 10px 20px;
@@ -198,61 +198,66 @@
     <form class="request-form">
         <h3>Formulario de Solicitud de Servicios</h3>
         <label for="project-name">Nombre del Proyecto:</label>
-        <input type="text" id="project-name" name="project-name" required><br><br>
-        <label for="description">Descripción:</label>
-        <textarea id="description" name="description" required></textarea><br><br>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="phone">Teléfono:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
-        <input type="submit" value="Enviar Solicitud">
+        <input type="text" id="project-name" name="project-name"><br><br>
+        <label for="description">Descripción:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <label for="service">Servicio:</label>
+        <select id="service" name="service">
+            <option value="puentes">Ingeniería de Puentes</option>
+            <option value="herramientas">Ingeniería de Herramientas</option>
+            <option value="intercambiadores">Intercambiadores de Calor</option>
+        </select><br><br>
+        <label for="attachment">Adjuntar Documentos:</label>
+        <input type="file" id="attachment" name="attachment"><br><br>
+        <button type="submit">Enviar</button>
     </form>
 </section>
 
 <section id="specialists" class="specialists">
     <h2>Especialistas</h2>
     <div class="specialist-item">
-        <h3>Especialista 1</h3>
-        <p>Breve biografía o descripción del especialista.</p>
+        <h3>Nombre del Especialista 1</h3>
+        <p>Especialista centrado en el modelamientos de las estructuras requeridas por las empresas. Se centra en el modelamiento a través de la plataforma ANSIS y entrega resultados junto con los respaldos de cálculos y los detalles acosrdes a la estrucura diseñada</p>
+        <button>Solicitar Consulta</button>
     </div>
     <div class="specialist-item">
-        <h3>Especialista 2</h3>
-        <p>Breve biografía o descripción del especialista.</p>
+        <h3>Nombre del Especialista 2</h3>
+        <p>Área de Especialización</p>
+        <button>Solicitar Consulta</button>
     </div>
 </section>
 
 <section id="contact" class="contact">
-    <h2>Contacto</h2>
+    <h2>Call Center</h2>
+    <p>Teléfono: +569 5743 9712 | Chat en Vivo | Email: corostegui@ingprotec.cl</p>
     <form class="contact-form">
+        <h3>Formulario de Contacto Rápido</h3>
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea><br><br>
-        <input type="submit" value="Enviar">
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Enviar</button>
     </form>
 </section>
 
 <section id="about" class="about">
     <h2>Sobre Nosotros</h2>
-    <p>Somos una empresa dedicada a la ingeniería con años de experiencia en diversos proyectos.</p>
     <div class="team-container">
         <div class="team-member">
-            <h3>Miembro del Equipo 1</h3>
-            <p>Descripción breve del miembro del equipo.</p>
+            <h3>Mario Cabrera</h3>
+            <p>Mario guía de manera clara y ordenada a INGPROTEC. Los colaboradores lo asocian como líder e inspira confianza en las decisiones que toma respecto a la dirección que se toma en los momentos más críticos.</p>
         </div>
         <div class="team-member">
-            <h3>Miembro del Equipo 2</h3>
-            <p>Descripción breve del miembro del equipo.</p>
+            <h3>Carlos Orostegui</h3>
+            <p>Carlos es parte de las operaciones del día a día en INGPROTEC. Se relaciona con toda la parte técnica de la empresa y busca siempre estar en la vanguardia en temas relacionados con la tecnología y eficiencia en nuestras operaciones.</p>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2023 Ingenierías MCCO. Todos los derechos reservados.</p>
+    <p>© 2024 Ingenierías MCCO. Todos los derechos reservados.</p>
 </footer>
 
 </body>
