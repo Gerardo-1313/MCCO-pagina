@@ -32,23 +32,26 @@
             font-size: 20px;
         }
         .banner {
-            position: relative;
-            width: 100%;
-            height: calc(100vh - 130px); /* Ajusta esta altura según el tamaño de tu header y nav */
-            background-image: url('https://th.bing.com/th/id/R.9ca18f4200305b4d6200d1e8373e52a6?rik=%2fNwZnfGVSJwLRg&riu=http%3a%2f%2fwww.abengoa.cl%2fexport%2fsites%2fabengoa-chile%2f.content%2fgalleries%2fimages%2fprojects%2fsdi-mineria.jpg&ehk=3K3mJGV1MAt1dNEj84PQsoPaMT1EQUerR20z%2bLTHw%2bs%3d&risl=&pid=ImgRaw&r=0');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        .banner-text {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
-            padding: 20px;
-            text-align: center;
-            max-width: 50%;
-        }
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 130px); /* Ajusta esta altura según el tamaño de tu header y nav */
+    background-image: url('tu-imagen-de-fondo.jpg'); /* Coloca aquí tu URL de la imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.banner-text {
+    position: absolute;
+    top: 25%; /* Ajuste para colocar el cuadro a 1/4 de la altura desde la parte superior */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    padding: 20px;
+    text-align: center;
+    max-width: 50%;
+}
+
         .banner button {
             padding: 10px 20px;
             background-color: #004080;
