@@ -43,7 +43,7 @@
         }
         .banner-text {
             position: absolute;
-            top: 25%; /* Ajuste para colocar el cuadro a 1/4 de la altura desde la parte superior */
+            top: 20%; /* Ajuste para colocar el cuadro más cerca de la parte superior */
             background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
             padding: 20px;
             text-align: center;
@@ -204,4 +204,55 @@
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="email">Email:</label>
-        <input type
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <input type="submit" value="Enviar Solicitud">
+    </form>
+</section>
+
+<section id="specialists" class="specialists">
+    <h2>Especialistas</h2>
+    <div class="specialist-item">
+        <h3>Especialista en Estructuras</h3>
+        <p>Descripción breve del especialista.</p>
+    </div>
+    <div class="specialist-item">
+        <h3>Especialista en Materiales</h3>
+        <p>Descripción breve del especialista.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<section id="about" class="about">
+    <h2>Sobre Nosotros</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <h3>Miembro del Equipo 1</h3>
+            <p>Descripción breve del miembro del equipo.</p>
+        </div>
+        <div class="team-member">
+            <h3>Miembro del Equipo 2</h3>
+            <p>Descripción breve del miembro del equipo.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2023 Ingenierías MCCO. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
